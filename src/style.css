@@ -1,4 +1,4 @@
-@import url('https://fonts.google.com/specimen/Roboto');
+@import "'https://fonts.google.com/specimen/Roboto'";
 
 body {
   margin: 0;
@@ -11,20 +11,22 @@ header {
   align-items: center;
  }
 
-ul {
+.list {
   list-style: none;
   display: flex;
 }
 
-li {
+
+.nav-links {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
   margin: 10px;
   height: 15px;
 }
 
-a {
-  color: black;
-  text-decoration: none;
-  text-transform: uppercase;
+.nav-links:not(:last-child) {
+  margin: 0;
 }
 
 .is-active {
