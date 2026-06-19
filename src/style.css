@@ -1,4 +1,4 @@
-@import "'https://fonts.google.com/specimen/Roboto'";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
   margin: 0;
@@ -16,7 +16,6 @@ header {
   display: flex;
 }
 
-
 .nav-links {
   color: black;
   text-decoration: none;
@@ -31,7 +30,6 @@ header {
 
 .is-active {
   position: relative;
-
 }
 
 .is-active::after {
