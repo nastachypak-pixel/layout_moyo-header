@@ -1,17 +1,20 @@
-@import 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap';
+:root {
+  --blue: #00acdc;
+}
 
 body {
   margin: 0;
   font-family: Roboto, sans-serif;
+  font-size: 12px;
 }
 
-header {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.list {
+.nav_list {
   list-style: none;
   display: flex;
 }
@@ -20,12 +23,11 @@ header {
   color: black;
   text-decoration: none;
   text-transform: uppercase;
-  margin: 10px;
   height: 15px;
 }
 
-.nav-links:not(:last-child) {
-  margin: 0;
+.nav_list li:not(:last-child) {
+  margin-right: 10px;
 }
 
 .is-active {
@@ -39,9 +41,9 @@ header {
   left: 0;
   width: 100%;
   height: 4px;
-  background-color: #00acdc;
+  background-color: var(--blue);
 }
 
 a:hover {
-  color: #00acdc;
+  color: var(--blue);
 }
