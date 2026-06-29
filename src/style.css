@@ -5,29 +5,42 @@
 body {
   margin: 0;
   font-family: Roboto, sans-serif;
+  font-weight: 500;
   font-size: 12px;
 }
 
 .header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  padding: 0 50px;
+}
+
+.logo_img {
+  display: block;
+}
+
+.logo {
+  margin-right: auto;
 }
 
 .nav_list {
   list-style: none;
   display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links {
-  color: black;
+  color: #000;
   text-decoration: none;
   text-transform: uppercase;
-  height: 15px;
+  height: 60px;
+  display: flex;
+  align-items: center;
 }
 
 .nav_list li:not(:last-child) {
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .is-active {
@@ -42,8 +55,13 @@ body {
   width: 100%;
   height: 4px;
   background-color: var(--blue);
+  border-radius: 8px;
 }
 
-a:hover {
+.nav-links:hover {
+  color: var(--blue);
+}
+
+.apple {
   color: var(--blue);
 }
